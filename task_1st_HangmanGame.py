@@ -13,10 +13,10 @@ hangman_art = {
 }
 
 def display_man(wrong_guesses):
-    print("-----------")
+    
     for line in hangman_art[wrong_guesses]:
         print(line)
-    print("-----------")
+
 
 def display_hint(hint):
     print(" ".join(hint))
@@ -53,8 +53,9 @@ def main():
         print("🎉 Congratulations! You won!")
         print("Word:", answer)
     else:
-        print("💀 You lost!")
+        print(" You lost!")
         print("Correct word:", answer)
 
 if __name__ == "__main__":
     main()
+
